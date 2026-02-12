@@ -271,6 +271,13 @@ ninja.data = [{
           window.open("https://www.scopus.com/authid/detail.uri?authorId=36350160600", "_blank");
         },
       },{
+        id: 'social-semanticscholar',
+        title: 'Semantic Scholar',
+        section: 'Redes sociales',
+        handler: () => {
+          window.open("https://www.semanticscholar.org/author/1401648468", "_blank");
+        },
+      },{
         id: 'social-work',
         title: 'Work',
         section: 'Redes sociales',
