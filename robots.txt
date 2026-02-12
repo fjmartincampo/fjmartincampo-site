@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://fjmartincampo.github.io/sitemap.xml
