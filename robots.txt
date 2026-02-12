@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://fjmartincampo.github.io/sitemap.xml
+Sitemap: https://www.fjmartincampo.com/sitemap.xml
