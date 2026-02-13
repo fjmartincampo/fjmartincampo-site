@@ -106,7 +106,7 @@ ninja.data = [{
           },
         },{id: "post-el-algoritmo-símplex-el-motor-de-la-optimización-matemática",
         
-          title: "El Algoritmo Símplex, el Motor de la Optimización Matemática",
+          title: "El Algoritmo Símplex, el motor de la optimización matemática",
         
         description: "El método clásico que convirtió la optimización en una herramienta computacional efectiva.",
         section: "Posts",
