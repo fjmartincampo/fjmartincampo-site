@@ -222,6 +222,13 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/english/8_project/";
             },},{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/76/9516.html", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'Send an email',
         section: 'Socials',
@@ -234,6 +241,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/fjmartincampo", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/f-javier-martín-campo-b4a1583b5", "_blank");
         },
       },{
         id: 'social-orcid',
