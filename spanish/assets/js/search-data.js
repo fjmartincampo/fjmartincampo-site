@@ -115,9 +115,9 @@ ninja.data = [{
             window.location.href = "/spanish/blog/2026/simplex/";
           
         },
-      },{id: "post-la-anatomía-de-un-problema-de-optimización-lineal",
+      },{id: "post-la-anatomía-del-problema-de-optimización-lineal",
         
-          title: "La anatomía de un problema de optimización lineal",
+          title: "La anatomía del problema de optimización lineal",
         
         description: "Caracterización geométrica de los problemas de optimización lineal, puntos extremos, direcciones extremas y teorema de representación",
         section: "Posts",

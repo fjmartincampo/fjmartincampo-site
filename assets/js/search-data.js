@@ -104,11 +104,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-el-algoritmo-símplex-el-motor-de-la-optimización-matemática",
+        },{id: "post-the-simplex-algorithm-the-engine-of-mathematical-optimization",
         
-          title: "El Algoritmo Símplex, el motor de la optimización matemática",
+          title: "The Simplex Algorithm, the engine of mathematical optimization",
         
-        description: "El método clásico que convirtió la optimización en una herramienta computacional efectiva.",
+        description: "The classic method that turned optimization into an effective computational tool.",
         section: "Posts",
         handler: () => {
           
