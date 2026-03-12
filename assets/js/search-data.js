@@ -69,6 +69,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/course/";
               },
+            },{id: "dropdown-optimization-bites",
+              title: "optimization bites",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/bites/";
+              },
             },{id: "dropdown-teaching-experience",
               title: "teaching experience",
               description: "",
@@ -104,7 +111,47 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-the-simplex-algorithm-the-engine-of-mathematical-optimization",
+        },{id: "nav-sources",
+          title: "sources",
+          description: "",
+          section: "Navigation menu",
+          handler: () => {
+            window.location.href = "/sources/";
+          },
+        },{id: "post-convergence-degeneracy-and-the-quot-dark-side-quot-of-the-simplex",
+        
+          title: "Convergence, Degeneracy, and the &quot;Dark Side&quot; of the Simplex",
+        
+        description: "Analysis of Simplex convergence with examples of cycles and full vertex traversals.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/simplexconvergence/";
+          
+        },
+      },{id: "post-how-to-recognize-the-different-types-of-solutions-in-linear-optimization-using-the-simplex-algorithm",
+        
+          title: "How to recognize the different types of solutions in linear optimization using the...",
+        
+        description: "Learn how to identify the different types of solutions in linear optimization problems with examples",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/simplexexamples/";
+          
+        },
+      },{id: "post-starting-the-simplex-method-how-to-begin-when-no-obvious-basic-solution-exists",
+        
+          title: "Starting the Simplex Method, how to begin when no obvious basic solution exists...",
+        
+        description: "How to construct an initial feasible basis in the Simplex method using the Big-M penalty approach and the Two-Phase method",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/initialization/";
+          
+        },
+      },{id: "post-the-simplex-algorithm-the-engine-of-mathematical-optimization",
         
           title: "The Simplex Algorithm, the engine of mathematical optimization",
         
@@ -185,42 +232,42 @@ ninja.data = [{
           title: 'aircraft conflict detection and resolution',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/1_project/";
+              window.location.href = "/projects/project-1/";
             },},{id: "projects-humanitarian-aid-distribution",
           title: 'humanitarian aid distribution',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/2_project/";
+              window.location.href = "/projects/project-2/";
             },},{id: "projects-design-of-electrification-programs-for-remote-areas",
           title: 'design of electrification programs for remote areas',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/3_project/";
-            },},{id: "projects-facilities-relocation",
-          title: 'facilities relocation',
+              window.location.href = "/projects/project-3/";
+            },},{id: "projects-facilities-closure-or-management-change",
+          title: 'facilities closure or management change',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/4_project/";
+              window.location.href = "/projects/project-4/";
             },},{id: "projects-cutting-in-the-steel-industry",
           title: 'cutting in the steel industry',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/5_project/";
+              window.location.href = "/projects/project-5/";
             },},{id: "projects-cutting-in-the-cardboard-industry",
           title: 'cutting in the cardboard industry',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/6_project/";
+              window.location.href = "/projects/project-6/";
             },},{id: "projects-medical-staff-planning-in-field-hospital-operations",
           title: 'medical staff planning in field hospital operations',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/7_project/";
+              window.location.href = "/projects/project-7/";
             },},{id: "projects-photovoltaic-energy-distribution-in-residential-communities",
           title: 'photovoltaic energy distribution in residential communities',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/english/8_project/";
+              window.location.href = "/projects/project-8/";
             },},{
         id: 'social-dblp',
         title: 'DBLP',

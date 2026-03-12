@@ -69,6 +69,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/spanish/course/";
               },
+            },{id: "dropdown-pildoras-de-optimización",
+              title: "pildoras de optimización",
+              description: "",
+              section: "Otras opciones",
+              handler: () => {
+                window.location.href = "/spanish/bites/";
+              },
             },{id: "dropdown-trayectoria-docente",
               title: "trayectoria docente",
               description: "",
@@ -104,7 +111,47 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/blog/";
           },
-        },{id: "post-el-algoritmo-símplex-el-motor-de-la-optimización-matemática",
+        },{id: "nav-fuentes",
+          title: "fuentes",
+          description: "",
+          section: "Menu de navegación",
+          handler: () => {
+            window.location.href = "/spanish/sources/";
+          },
+        },{id: "post-convergencia-degeneración-y-el-quot-lado-oscuro-quot-del-símplex",
+        
+          title: "Convergencia, degeneración y el &quot;lado oscuro&quot; del Símplex",
+        
+        description: "Análisis de la convergencia del Símplex y ejemplos de ciclos y recorridos completos de vértices.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/simplexconvergence/";
+          
+        },
+      },{id: "post-cómo-reconocer-los-distintos-tipos-de-soluciones-en-optimización-lineal-con-el-símplex",
+        
+          title: "Cómo reconocer los distintos tipos de soluciones en optimización lineal con el Símplex...",
+        
+        description: "Aprende a diferenciar los tipos de soluciones en problemas de optimización lineal con ejemplos",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/simplexexamples/";
+          
+        },
+      },{id: "post-el-arranque-del-símplex-cómo-comenzar-cuando-no-hay-solución-básica-evidente",
+        
+          title: "El arranque del Símplex, cómo comenzar cuando no hay solución básica evidente",
+        
+        description: "Cómo construir una base factible inicial en el Símplex mediante los métodos de penalizaciones (Big-M) y el método de las dos fases",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/initialization/";
+          
+        },
+      },{id: "post-el-algoritmo-símplex-el-motor-de-la-optimización-matemática",
         
           title: "El Algoritmo Símplex, el motor de la optimización matemática",
         
@@ -185,42 +232,42 @@ ninja.data = [{
           title: 'detección y resolución de conflictos aéreos',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/1_project/";
+              window.location.href = "/spanish/projects/project-1/";
             },},{id: "projects-distribución-de-ayuda-humanitaria",
           title: 'distribución de ayuda humanitaria',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/2_project/";
+              window.location.href = "/spanish/projects/project-2/";
             },},{id: "projects-diseño-de-programas-de-electrificación-rural-descentralizada",
           title: 'diseño de programas de electrificación rural descentralizada',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/3_project/";
+              window.location.href = "/spanish/projects/project-3/";
             },},{id: "projects-deslocalización-de-instalaciones",
           title: 'deslocalización de instalaciones',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/4_project/";
+              window.location.href = "/spanish/projects/project-4/";
             },},{id: "projects-corte-en-la-industria-del-acero",
           title: 'corte en la industria del acero',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/5_project/";
+              window.location.href = "/spanish/projects/project-5/";
             },},{id: "projects-corte-en-la-industria-del-cartón-nido-de-abeja",
           title: 'corte en la industria del cartón nido de abeja',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/6_project/";
+              window.location.href = "/spanish/projects/project-6/";
             },},{id: "projects-planificación-del-personal-médico-en-un-hospital-de-campaña",
           title: 'planificación del personal médico en un hospital de campaña',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/7_project/";
+              window.location.href = "/spanish/projects/project-7/";
             },},{id: "projects-reparto-de-energía-fotovoltaica-en-comunidades-de-vecinos",
           title: 'reparto de energía fotovoltaica en comunidades de vecinos',
           description: "",
           section: "Proyectos",handler: () => {
-              window.location.href = "/spanish/projects/spanish/8_project/";
+              window.location.href = "/spanish/projects/project-8/";
             },},{
         id: 'social-dblp',
         title: 'DBLP',
