@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-convergencia-degeneración-y-el-quot-lado-oscuro-quot-del-símplex",
+        },{id: "post-descubriendo-el-espejo-de-la-optimización-lineal-el-fascinante-mundo-de-la-dualidad",
+        
+          title: "Descubriendo el espejo de la optimización Lineal, el fascinante mundo de la dualidad...",
+        
+        description: "Un viaje por la teoría de la dualidad en optimización lineal.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/duality/";
+          
+        },
+      },{id: "post-convergencia-degeneración-y-el-quot-lado-oscuro-quot-del-símplex",
         
           title: "Convergencia, degeneración y el &quot;lado oscuro&quot; del Símplex",
         

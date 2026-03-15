@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-convergence-degeneracy-and-the-quot-dark-side-quot-of-the-simplex",
+        },{id: "post-discovering-the-mirror-of-linear-optimization-the-fascinating-world-of-duality",
+        
+          title: "Discovering the mirror of linear optimization, the fascinating world of duality",
+        
+        description: "A journey through the theory of duality in linear optimization.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/duality/";
+          
+        },
+      },{id: "post-convergence-degeneracy-and-the-quot-dark-side-quot-of-the-simplex",
         
           title: "Convergence, Degeneracy, and the &quot;Dark Side&quot; of the Simplex",
         
