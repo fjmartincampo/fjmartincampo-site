@@ -118,7 +118,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-discovering-the-mirror-of-linear-optimization-the-fascinating-world-of-duality",
+        },{id: "post-beyond-the-optimum-keys-to-post-optimization",
+        
+          title: "Beyond the Optimum, keys to Post-Optimization",
+        
+        description: "An intuitive explanation of how to analyze the stability of an optimal solution using post-optimization techniques",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/postoptimization/";
+          
+        },
+      },{id: "post-simplex-in-reverse-understanding-the-dual-simplex-algorithm",
+        
+          title: "Simplex in Reverse, understanding the Dual Simplex Algorithm",
+        
+        description: "An intuitive introduction to the Dual Simplex algorithm, its foundations, and how to initialize it.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/dualsimplex/";
+          
+        },
+      },{id: "post-discovering-the-mirror-of-linear-optimization-the-fascinating-world-of-duality",
         
           title: "Discovering the mirror of linear optimization, the fascinating world of duality",
         
@@ -279,6 +301,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-8/";
+            },},{id: "projects-geometric-classification-through-ensemble-learning",
+          title: 'Geometric classification through ensemble learning',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project-9/";
             },},{
         id: 'social-dblp',
         title: 'DBLP',

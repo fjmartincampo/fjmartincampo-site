@@ -118,7 +118,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-descubriendo-el-espejo-de-la-optimización-lineal-el-fascinante-mundo-de-la-dualidad",
+        },{id: "post-el-óptimo-no-es-el-final-claves-de-la-post-optimización",
+        
+          title: "El óptimo no es el final, claves de la post-optimización",
+        
+        description: "Una explicación intuitiva de cómo estudiar la estabilidad de una solución óptima mediante técnicas de post-optimización",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/postoptimization/";
+          
+        },
+      },{id: "post-el-símplex-al-revés-entendiendo-el-algoritmo-dual-del-símplex",
+        
+          title: "El Símplex al revés, entendiendo el algoritmo dual del Símplex",
+        
+        description: "Una introducción intuitiva al algoritmo dual del Símplex, sus fundamentos y cómo inicializarlo.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/dualsimplex/";
+          
+        },
+      },{id: "post-descubriendo-el-espejo-de-la-optimización-lineal-el-fascinante-mundo-de-la-dualidad",
         
           title: "Descubriendo el espejo de la optimización Lineal, el fascinante mundo de la dualidad...",
         
@@ -279,6 +301,11 @@ ninja.data = [{
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-8/";
+            },},{id: "projects-clasificación-geométrica-mediante-ensamblados",
+          title: 'clasificación geométrica mediante ensamblados',
+          description: "",
+          section: "Proyectos",handler: () => {
+              window.location.href = "/spanish/projects/project-9/";
             },},{
         id: 'social-dblp',
         title: 'DBLP',
