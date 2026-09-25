@@ -62,8 +62,8 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/datasets/";
               },
-            },{id: "dropdown-course-2025-26",
-              title: "Course 2025-26",
+            },{id: "dropdown-course-2026-27",
+              title: "Course 2026-27",
               description: "",
               section: "Dropdown",
               handler: () => {
