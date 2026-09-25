@@ -15,110 +15,319 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-home",
-    title: "home",
+    title: "Home",
     section: "Navigation menu",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "dropdown-research-experience",
-              title: "research experience",
+              title: "Research experience",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/projects/";
               },
             },{id: "dropdown-collaborators",
-              title: "collaborators",
+              title: "Collaborators",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/coauthors/";
               },
             },{id: "dropdown-publications-jcr",
-              title: "publications JCR",
+              title: "Publications JCR",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/publications/";
               },
             },{id: "dropdown-other-publications",
-              title: "other publications",
+              title: "Other publications",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/opublications/";
               },
             },{id: "dropdown-books-chapters",
-              title: "books/chapters",
+              title: "Books/chapters",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/books/";
               },
             },{id: "dropdown-datasets",
-              title: "datasets",
+              title: "Datasets",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/datasets/";
               },
             },{id: "dropdown-course-2025-26",
-              title: "course 2025-26",
+              title: "Course 2025-26",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/course/";
               },
             },{id: "dropdown-optimization-bites",
-              title: "optimization bites",
+              title: "Optimization bites",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/bites/";
               },
             },{id: "dropdown-teaching-experience",
-              title: "teaching experience",
+              title: "Teaching experience",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/teaching/";
               },
             },{id: "dropdown-bachelor-39-s-theses",
-              title: "bachelor&#39;s theses",
+              title: "Bachelor&#39;s theses",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/tfg/";
               },
             },{id: "dropdown-master-39-s-theses",
-              title: "master&#39;s theses",
+              title: "Master&#39;s theses",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/tfm/";
               },
             },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-blog",
-          title: "blog",
-          description: "exploring operations research",
+          title: "Blog",
+          description: "Exploring operations research",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/blog/";
           },
         },{id: "nav-sources",
-          title: "sources",
+          title: "Sources",
           description: "",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-beyond-the-optimum-keys-to-post-optimization",
+        },{id: "post-a-crime-has-been-committed-in-a-sudoku",
+        
+          title: "A crime has been committed... in a sudoku!",
+        
+        description: "Solve the crime using binary linear optimization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/murdoku/";
+          
+        },
+      },{id: "post-the-harmony-of-digits-in-solving-kakuro",
+        
+          title: "The harmony of digits in solving Kakuro",
+        
+        description: "Fixed sums, unrepeated digits, intersecting cells, and binary optimization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/kakuro/";
+          
+        },
+      },{id: "post-killer-sudoku-the-empty-board-challenge-that-math-can-solve",
+        
+          title: "Killer Sudoku, the empty board challenge that math can solve",
+        
+        description: "A Sudoku without a single starting number? Binary optimization solves it without hesitation",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/sudokukiller/";
+          
+        },
+      },{id: "post-solving-the-number-sums-board-using-mathematical-optimization",
+        
+          title: "Solving the Number Sums board using mathematical optimization",
+        
+        description: "Adding numbers seems easy until all rows and columns must match at once",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/numbersums/";
+          
+        },
+      },{id: "post-building-bridges-with-linear-optimization-the-hashi-puzzle",
+        
+          title: "Building bridges with linear optimization, the Hashi puzzle",
+        
+        description: "From a Japanese puzzle to a single-commodity flow model",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/hashi/";
+          
+        },
+      },{id: "post-the-knight-39-s-perfect-tour-challenge-chess-with-linear-optimization",
+        
+          title: "The knight&#39;s perfect tour, challenge chess with linear optimization",
+        
+        description: "A knight visiting every square on the board exactly once?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/knightstour/";
+          
+        },
+      },{id: "post-beyond-0-and-1-the-binary-sudoku",
+        
+          title: "Beyond 0 and 1, the binary sudoku",
+        
+        description: "Challenge your mind and learn to solve this puzzle of zeros and ones",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/binarysudoku/";
+          
+        },
+      },{id: "post-dominating-the-chessboard-with-queens",
+        
+          title: "Dominating the chessboard with queens",
+        
+        description: "Binary linear optimization to dominate the chessboard",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/queensdomination/";
+          
+        },
+      },{id: "post-logical-thermometers-beyond-temperature",
+        
+          title: "Logical thermometers, beyond temperature",
+        
+        description: "Modeling this puzzle using integer optimization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thermometers/";
+          
+        },
+      },{id: "post-dominosa-beyond-dominoes",
+        
+          title: "Dominosa, Beyond Dominoes",
+        
+        description: "Mathematical formulation of the Dominosa puzzle using binary linear programming",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/dominosa/";
+          
+        },
+      },{id: "post-the-hidato-number-maze",
+        
+          title: "The Hidato Number Maze",
+        
+        description: "Mathematical formulation of Hidato through optimization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/hidato/";
+          
+        },
+      },{id: "post-crossing-the-bridge-at-night",
+        
+          title: "Crossing the Bridge at Night",
+        
+        description: "How to get 4 people across a dark bridge in the shortest time possible?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/bridgecrossing/";
+          
+        },
+      },{id: "post-map-coloring",
+        
+          title: "Map Coloring",
+        
+        description: "How many colors do you need to color a map so that no two neighboring countries share the same color?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/coloringmap/";
+          
+        },
+      },{id: "post-einstein-39-s-riddle",
+        
+          title: "Einstein&#39;s Riddle",
+        
+        description: "Is it true that only 2% of people can solve it? Let&#39;s solve it using binary optimization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/einsteinpuzzle/";
+          
+        },
+      },{id: "post-constrained-non-linear-optimization-the-conditions-hiding-the-optimum",
+        
+          title: "Constrained Non-Linear Optimization, the conditions hiding the optimum",
+        
+        description: "Discovering how the Karush-Kuhn-Tucker conditions connect the objective function and constraints to characterize optimal solutions",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/kkt/";
+          
+        },
+      },{id: "post-gomory-fractional-cuts-the-power-of-a-good-cut",
+        
+          title: "Gomory fractional cuts, the power of a good cut",
+        
+        description: "Discover how Gomory cuts eliminate fractional solutions to bring us closer to the optimal integer solution",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/gomorycut/";
+          
+        },
+      },{id: "post-finding-the-needle-without-searching-the-entire-haystack",
+        
+          title: "Finding the needle without searching the entire haystack",
+        
+        description: "An intuitive introduction to the Branch and Bound algorithm",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/branchandbound/";
+          
+        },
+      },{id: "post-modeling-decisions-with-binary-variables",
+        
+          title: "Modeling Decisions with Binary Variables",
+        
+        description: "Learning to formulate implications, disjunctions, fixed costs, and other common constraints in integer optimization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/basicmodelling/";
+          
+        },
+      },{id: "post-from-continuous-to-integer-optimization-the-power-of-integer-variables",
+        
+          title: "From Continuous to Integer Optimization: The Power of Integer Variables",
+        
+        description: "Exploring how a small tweak in a model gives rise to a whole new class of optimization problems",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/integeroptimization/";
+          
+        },
+      },{id: "post-beyond-the-optimum-keys-to-post-optimization",
         
           title: "Beyond the Optimum, keys to Post-Optimization",
         
@@ -262,42 +471,42 @@ ninja.data = [{
           
         },
       },{id: "projects-aircraft-conflict-detection-and-resolution",
-          title: 'aircraft conflict detection and resolution',
+          title: 'Aircraft conflict detection and resolution',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-1/";
             },},{id: "projects-humanitarian-aid-distribution",
-          title: 'humanitarian aid distribution',
+          title: 'Humanitarian aid distribution',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-2/";
             },},{id: "projects-design-of-electrification-programs-for-remote-areas",
-          title: 'design of electrification programs for remote areas',
+          title: 'Design of electrification programs for remote areas',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-3/";
             },},{id: "projects-facilities-closure-or-management-change",
-          title: 'facilities closure or management change',
+          title: 'Facilities closure or management change',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-4/";
             },},{id: "projects-cutting-in-the-steel-industry",
-          title: 'cutting in the steel industry',
+          title: 'Cutting in the steel industry',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-5/";
             },},{id: "projects-cutting-in-the-cardboard-industry",
-          title: 'cutting in the cardboard industry',
+          title: 'Cutting in the cardboard industry',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-6/";
             },},{id: "projects-medical-staff-planning-in-field-hospital-operations",
-          title: 'medical staff planning in field hospital operations',
+          title: 'Medical staff planning in field hospital operations',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-7/";
             },},{id: "projects-photovoltaic-energy-distribution-in-residential-communities",
-          title: 'photovoltaic energy distribution in residential communities',
+          title: 'Photovoltaic energy distribution in residential communities',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-8/";

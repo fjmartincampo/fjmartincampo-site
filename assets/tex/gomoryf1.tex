@@ -1,0 +1,68 @@
+\documentclass[tikz, border=2mm]{standalone}
+\usepackage{xcolor}
+\usetikzlibrary{arrows}
+
+\definecolor{qqqqff}{RGB}{1,82,142}
+\definecolor{xdxdff}{RGB}{21,182,184}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{eqeqeq}{rgb}{0.88,0.88,0.88}
+\definecolor{ffffff}{rgb}{1,1,1}
+
+\begin{document}
+	
+	\begin{tikzpicture}[line cap=round,line join=round,x=1.0cm,y=1.0cm]
+		\draw[->,color=black] (-1,0) -- (7,0);
+		\foreach \x in {-1,1,2,3,4,5,6}
+		\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+		\draw[->,color=black] (0,-1) -- (0,5);
+		\foreach \y in {-1,1,2,3,4}
+		\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+		\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+		
+		\clip(-1,-1) rectangle (7,5);
+		
+		\draw [dash pattern=on 1pt off 1pt,color=eqeqeq,domain=-1:7] plot(\x,{(-27--6*\x)/9});
+		\draw [dash pattern=on 1pt off 1pt,color=eqeqeq,domain=-1:7] plot(\x,{(-15--6*\x)/9});
+		
+		\fill[color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (0,1) -- (1.5,2.5) -- (4.5,1.5) -- (5,0) -- cycle;
+		
+		\draw [domain=-1:7] plot(\x,{(-1-1*\x)/-1});
+		\draw [domain=-1:7] plot(\x,{(--27-3*\x)/9});
+		\draw [domain=-1:7] plot(\x,{(--75-15*\x)/5});
+		
+		\draw [color=qqqqff] (0,0)-- (0,1);
+		\draw [color=qqqqff] (0,1)-- (1.5,2.5);
+		\draw [color=qqqqff] (1.5,2.5)-- (4.5,1.5);
+		\draw [color=qqqqff] (4.5,1.5)-- (5,0);
+		\draw [color=qqqqff] (5,0)-- (0,0);
+		
+		\begin{scriptsize}
+			\fill [color=ffqqqq] (0,1) circle (2pt);
+			\fill [color=ffffff] (-1,0) circle (0.5pt);
+			\fill [color=qqqqff] (9,0) circle (1.5pt);
+			\fill [color=xdxdff] (0,15) circle (1.5pt);
+			\draw[color=xdxdff] (-7.03,6.65) node {$E$};
+			\fill [color=ffqqqq] (5,0) circle (2pt);
+			\fill [color=ffqqqq] (0,0) circle (2pt);
+			\fill [color=qqqqff] (1.5,2.5) circle (1.5pt);
+			\fill [color=qqqqff] (4.5,1.5) circle (1.5pt);
+			\fill [color=ffqqqq] (1,1) circle (2pt);
+			\fill [color=ffqqqq] (2,1) circle (2pt);
+			\fill [color=ffqqqq] (3,1) circle (2pt);
+			\fill [color=ffqqqq] (4,1) circle (2pt);
+			\fill [color=ffqqqq] (4,0) circle (2pt);
+			\fill [color=ffqqqq] (3,0) circle (2pt);
+			\fill [color=ffqqqq] (2,0) circle (2pt);
+			\fill [color=ffqqqq] (1,0) circle (2pt);
+			\fill [color=ffqqqq] (1,2) circle (2pt);
+			\fill [color=ffqqqq] (2,2) circle (2pt);
+			\fill [color=ffqqqq] (3,2) circle (2pt);
+			\draw[color=xdxdff] (0.09,-2.84) node {$U$};
+			\fill [color=ffqqqq] (9,3) circle (3.0pt);
+			\draw[color=ffqqqq] (9.11,3.23) node {$W$};
+			\fill [color=ffqqqq] (10,5) circle (3.0pt);
+			\draw[color=ffqqqq] (10.1,5.23) node {$Z$};
+		\end{scriptsize}
+	\end{tikzpicture}
+	
+\end{document}

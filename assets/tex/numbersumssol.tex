@@ -1,0 +1,27 @@
+\documentclass[border=5pt]{standalone}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+
+\definecolor{maincolor1}{RGB}{1,82,142}  % Azul oscuro
+\definecolor{maincolor2}{RGB}{21,182,184} % azul clarito
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw=maincolor2,inner sep=1.5pt,line width=1pt] (char) {\textcolor{black}{#1}};}}
+\newcommand*\off[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw=none,inner sep=1.5pt] (char) {\textcolor{gray!40}{#1}};}}
+
+\begin{document}
+	\setlength\tabcolsep{0.15cm}
+	\begin{tabular}{c|cccccccc|}
+		& \textcolor{maincolor1}{\textbf{5}} & \textcolor{maincolor1}{\textbf{28}} & \textcolor{maincolor1}{\textbf{13}} & \textcolor{maincolor1}{\textbf{12}} & \textcolor{maincolor1}{\textbf{27}} & \textcolor{maincolor1}{\textbf{3}} & \textcolor{maincolor1}{\textbf{26}} & \textcolor{maincolor1}{\textbf{11}} \\
+		\hline
+		\textcolor{maincolor1}{\textbf{10}} & \off{2} & \off{2} & \off{8} & \off{4} & \off{4} & \circled{3} & \circled{5} & \circled{2} \\
+		\textcolor{maincolor1}{\textbf{17}} & \off{8} & \circled{8} & \off{9} & \off{3} & \circled{7} & \off{7} & \off{8} & \circled{2} \\
+		\textcolor{maincolor1}{\textbf{14}} & \off{9} & \circled{8} & \off{4} & \circled{3} & \circled{3} & \off{1} & \off{7} & \off{9} \\
+		\textcolor{maincolor1}{\textbf{23}} & \off{3} & \circled{9} & \circled{8} & \off{1} & \off{6} & \off{5} & \circled{6} & \off{9} \\
+		\textcolor{maincolor1}{\textbf{13}} & \circled{2} & \off{1} & \off{3} & \circled{4} & \off{8} & \off{8} & \circled{1} & \circled{6} \\
+		\textcolor{maincolor1}{\textbf{17}} & \off{5} & \circled{3} & \off{8} & \circled{5} & \circled{4} & \off{6} & \circled{5} & \off{4} \\
+		\textcolor{maincolor1}{\textbf{25}} & \circled{3} & \off{3} & \circled{5} & \off{2} & \circled{8} & \off{2} & \circled{9} & \off{1} \\
+		\textcolor{maincolor1}{\textbf{6}}  & \off{1} & \off{1} & \off{6} & \off{5} & \circled{5} & \off{4} & \off{4} & \circled{1} \\
+		\hline
+	\end{tabular}
+\end{document}

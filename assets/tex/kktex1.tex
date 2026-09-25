@@ -1,0 +1,32 @@
+\documentclass[tikz, border=2mm]{standalone}
+
+% Definición de colores
+\definecolor{maincolor1}{RGB}{1,82,142}  % Azul oscuro
+\definecolor{maincolor2}{RGB}{21,182,184} % Azul clarito
+
+\begin{document}
+	\begin{tikzpicture}[line cap=round, line join=round, x=3.0cm, y=3.0cm]
+		
+		% Ejes coordenados
+		\draw[->, color=black] (-0.5,0.) -- (1.5,0.);
+		\foreach \x in {-0.5,0.5,1}
+		\draw[shift={(\x,0)}, color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+		
+		\draw[->, color=black] (0.,-0.5) -- (0.,1.5);
+		\foreach \y in {-0.5,0.5,1}
+		\draw[shift={(0,\y)}, color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+		
+		\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+		
+		% Región factible sombreada con maincolor2 (azul clarito)
+		\fill [color=maincolor2, fill opacity=0.35] (1,0) -- plot[samples=500, domain=0.0:1.0] (\x, {(1-\x)^(0.5)}) -- cycle;
+		
+		% Restricción 1: x_1 + x_2 = 1 (Recta en azul oscuro)
+		\draw [domain=-0.5:1.5, color=maincolor1, thick] plot(\x, {1-\x});
+		
+		% Restricción 2: x_1 + x_2^2 = 1 (Parábola en azul oscuro)
+		\draw [samples=500, domain=-0.5:1, color=maincolor1, thick] plot(\x, {(1-\x)^(0.5)});
+		\draw [samples=500, domain=0.75:1, color=maincolor1, thick] plot(\x, {-(1-\x)^(0.5)});
+		
+	\end{tikzpicture}
+\end{document}

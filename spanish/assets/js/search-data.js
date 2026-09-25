@@ -15,110 +15,319 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-inicio",
-    title: "inicio",
+    title: "Inicio",
     section: "Menu de navegación",
     handler: () => {
       window.location.href = "/spanish/";
     },
   },{id: "dropdown-experiencia-investigadora",
-              title: "experiencia investigadora",
+              title: "Experiencia investigadora",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/projects/";
               },
             },{id: "dropdown-colaboradores",
-              title: "colaboradores",
+              title: "Colaboradores",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/coauthors/";
               },
             },{id: "dropdown-publicaciones-jcr",
-              title: "publicaciones JCR",
+              title: "Publicaciones JCR",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/publications/";
               },
             },{id: "dropdown-otras-publicaciones",
-              title: "otras publicaciones",
+              title: "Otras publicaciones",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/opublications/";
               },
             },{id: "dropdown-libros-capítulos",
-              title: "libros/capítulos",
+              title: "Libros/capítulos",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/books/";
               },
             },{id: "dropdown-datasets",
-              title: "datasets",
+              title: "Datasets",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/datasets";
               },
             },{id: "dropdown-curso-2025-26",
-              title: "curso 2025-26",
+              title: "Curso 2025-26",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/course/";
               },
-            },{id: "dropdown-pildoras-de-optimización",
-              title: "pildoras de optimización",
+            },{id: "dropdown-píldoras-de-optimización",
+              title: "Píldoras de optimización",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/bites/";
               },
             },{id: "dropdown-trayectoria-docente",
-              title: "trayectoria docente",
+              title: "Trayectoria docente",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/teaching/";
               },
             },{id: "dropdown-trabajos-fin-de-grado",
-              title: "trabajos fin de grado",
+              title: "Trabajos fin de grado",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/tfg/";
               },
             },{id: "dropdown-trabajos-fin-de-máster",
-              title: "trabajos fin de máster",
+              title: "Trabajos fin de máster",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/tfm/";
               },
             },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Menu de navegación",
           handler: () => {
             window.location.href = "/spanish/cv/";
           },
         },{id: "nav-blog",
-          title: "blog",
-          description: "explorando la investigación operativa",
+          title: "Blog",
+          description: "Explorando la investigación operativa",
           section: "Menu de navegación",
           handler: () => {
             window.location.href = "/spanish/blog/";
           },
         },{id: "nav-fuentes",
-          title: "fuentes",
+          title: "Fuentes",
           description: "",
           section: "Menu de navegación",
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-el-óptimo-no-es-el-final-claves-de-la-post-optimización",
+        },{id: "post-se-ha-cometido-un-crimen-en-un-sudoku",
+        
+          title: "Se ha cometido un crimen... ¡en un sudoku!",
+        
+        description: "Resuelve el crimen utilizando optimización lineal binaria",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/murdoku/";
+          
+        },
+      },{id: "post-la-armonía-de-los-dígitos-resolviendo-el-kakuro",
+        
+          title: "La armonía de los dígitos resolviendo el Kakuro",
+        
+        description: "Sumas fijas, dígitos sin repetir, celdas cruzadas y optimización binaria",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/kakuro/";
+          
+        },
+      },{id: "post-sudoku-killer-el-reto-del-tablero-vacío-que-las-matemáticas-pueden-vencer",
+        
+          title: "Sudoku Killer, el reto del tablero vacío que las matemáticas pueden vencer",
+        
+        description: "¿Un Sudoku sin un solo número inicial? La optimización binaria lo resuelve sin titubear",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/sudokukiller/";
+          
+        },
+      },{id: "post-resolviendo-el-tablero-de-number-sums-usando-optimización-matemática",
+        
+          title: "Resolviendo el tablero de Number Sums usando optimización matemática",
+        
+        description: "Sumar parece fácil hasta que todas las filas y columnas tienen que encajar a la vez",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/numbersums/";
+          
+        },
+      },{id: "post-construyendo-puentes-con-optimización-lineal-el-rompecabezas-hashi",
+        
+          title: "Construyendo puentes con optimización lineal, el rompecabezas Hashi",
+        
+        description: "De un pasatiempo japonés a un modelo de flujo único",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/hashi/";
+          
+        },
+      },{id: "post-el-paseo-perfecto-del-caballo-desafía-al-ajedrez-con-optimización-lineal",
+        
+          title: "El paseo perfecto del caballo, desafía al ajedrez con optimización lineal",
+        
+        description: "¿Un caballo que visita cada casilla del tablero exactamente una vez?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/knightstour/";
+          
+        },
+      },{id: "post-más-allá-del-0-y-el-1-el-sudoku-binario",
+        
+          title: "Más allá del 0 y el 1, el sudoku binario",
+        
+        description: "Desafía a tu mente y aprende a resolver este rompecabezas de ceros y unos",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/binarysudoku/";
+          
+        },
+      },{id: "post-dominando-el-tablero-con-reinas",
+        
+          title: "Dominando el tablero con reinas",
+        
+        description: "Optimización lineal binaria para dominar el tablero de ajedrez",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/queensdomination/";
+          
+        },
+      },{id: "post-termómetros-lógicos-más-allá-de-la-temperatura",
+        
+          title: "Termómetros lógicos, más allá de la temperatura",
+        
+        description: "Modelando este puzzle mediante optimización entera",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/thermometers/";
+          
+        },
+      },{id: "post-dominosa-más-allá-del-dominó",
+        
+          title: "Dominosa, más allá del dominó",
+        
+        description: "Formulación matemática del juego Dominosa mediante optimización lineal binaria",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/dominosa/";
+          
+        },
+      },{id: "post-el-laberinto-numérico-de-hidato",
+        
+          title: "El laberinto numérico de Hidato",
+        
+        description: "Formulación matemática de Hidato mediante optimización",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/hidato/";
+          
+        },
+      },{id: "post-cruzando-el-puente-de-noche",
+        
+          title: "Cruzando el puente de noche",
+        
+        description: "¿Cómo cruzar a 4 personas por un puente oscuro en el menor tiempo posible?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/bridgecrossing/";
+          
+        },
+      },{id: "post-coloreando-mapas",
+        
+          title: "Coloreando mapas",
+        
+        description: "¿Cuántos colores necesitas para pintar un mapa sin que dos países vecinos compartan color?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/coloringmap/";
+          
+        },
+      },{id: "post-el-acertijo-de-einstein",
+        
+          title: "El acertijo de Einstein",
+        
+        description: "¿Es cierto que sólo el 2% puede resolverlo? Resolvámoslo mediante optimización binaria",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/einsteinpuzzle/";
+          
+        },
+      },{id: "post-optimización-no-lineal-con-restricciones-las-condiciones-que-esconden-el-óptimo",
+        
+          title: "Optimización no lineal con restricciones, las condiciones que esconden el óptimo",
+        
+        description: "Descubriendo cómo las condiciones de Karush-Kuhn-Tucker permiten conectar el objetivo y las restricciones para caracterizar soluciones óptimas",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/kkt/";
+          
+        },
+      },{id: "post-cortes-fraccionales-de-gomory-el-poder-de-un-buen-corte",
+        
+          title: "Cortes fraccionales de Gomory, el poder de un buen corte",
+        
+        description: "Descubre cómo los cortes de Gomory eliminan soluciones fraccionarias para acercarnos a la solución entera óptima",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/gomorycut/";
+          
+        },
+      },{id: "post-encontrar-la-aguja-sin-mirar-todo-el-pajar",
+        
+          title: "Encontrar la aguja sin mirar todo el pajar",
+        
+        description: "Una introducción intuitiva al algoritmo de ramificación y acotación",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/branchandbound/";
+          
+        },
+      },{id: "post-modelando-decisiones-con-variables-binarias",
+        
+          title: "Modelando decisiones con variables binarias",
+        
+        description: "Aprendiendo a formular implicaciones, disyunciones, costes fijos y otras restricciones habituales en optimización entera",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/basicmodelling/";
+          
+        },
+      },{id: "post-de-la-optimización-continua-a-la-optimización-entera-el-poder-de-las-variables-enteras",
+        
+          title: "De la optimización continua a la optimización entera, el poder de las variables...",
+        
+        description: "Explorando cómo un pequeño cambio en el modelo da lugar a una nueva clase de problemas de optimización",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/integeroptimization/";
+          
+        },
+      },{id: "post-el-óptimo-no-es-el-final-claves-de-la-post-optimización",
         
           title: "El óptimo no es el final, claves de la post-optimización",
         
@@ -262,47 +471,47 @@ ninja.data = [{
           
         },
       },{id: "projects-detección-y-resolución-de-conflictos-aéreos",
-          title: 'detección y resolución de conflictos aéreos',
+          title: 'Detección y resolución de conflictos aéreos',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-1/";
             },},{id: "projects-distribución-de-ayuda-humanitaria",
-          title: 'distribución de ayuda humanitaria',
+          title: 'Distribución de ayuda humanitaria',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-2/";
             },},{id: "projects-diseño-de-programas-de-electrificación-rural-descentralizada",
-          title: 'diseño de programas de electrificación rural descentralizada',
+          title: 'Diseño de programas de electrificación rural descentralizada',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-3/";
             },},{id: "projects-deslocalización-de-instalaciones",
-          title: 'deslocalización de instalaciones',
+          title: 'Deslocalización de instalaciones',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-4/";
             },},{id: "projects-corte-en-la-industria-del-acero",
-          title: 'corte en la industria del acero',
+          title: 'Corte en la industria del acero',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-5/";
             },},{id: "projects-corte-en-la-industria-del-cartón-nido-de-abeja",
-          title: 'corte en la industria del cartón nido de abeja',
+          title: 'Corte en la industria del cartón nido de abeja',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-6/";
             },},{id: "projects-planificación-del-personal-médico-en-un-hospital-de-campaña",
-          title: 'planificación del personal médico en un hospital de campaña',
+          title: 'Planificación del personal médico en un hospital de campaña',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-7/";
             },},{id: "projects-reparto-de-energía-fotovoltaica-en-comunidades-de-vecinos",
-          title: 'reparto de energía fotovoltaica en comunidades de vecinos',
+          title: 'Reparto de energía fotovoltaica en comunidades de vecinos',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-8/";
             },},{id: "projects-clasificación-geométrica-mediante-ensamblados",
-          title: 'clasificación geométrica mediante ensamblados',
+          title: 'Clasificación geométrica mediante ensamblados',
           description: "",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-9/";

@@ -1,0 +1,26 @@
+\documentclass[border=5pt]{standalone}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+
+\definecolor{maincolor1}{RGB}{1,82,142}  % Azul
+\definecolor{maincolor2}{RGB}{200,30,30} % Rojo
+
+\newcommand*\circulo[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw=none,inner sep=2pt] (char) {#1};}}
+
+\begin{document}
+	\setlength\tabcolsep{0.15cm}
+	\begin{tabular}{c|cccccccc|}
+		& \textcolor{maincolor1}{\textbf{5}} & \textcolor{maincolor1}{\textbf{28}} & \textcolor{maincolor1}{\textbf{13}} & \textcolor{maincolor1}{\textbf{12}} & \textcolor{maincolor1}{\textbf{27}} & \textcolor{maincolor1}{\textbf{3}} & \textcolor{maincolor1}{\textbf{26}} & \textcolor{maincolor1}{\textbf{11}} \\
+		\hline
+		\textcolor{maincolor1}{\textbf{10}} & \circulo{2} & \circulo{2} & \circulo{8} & \circulo{4} & \circulo{4} & \circulo{3} & \circulo{5} & \circulo{2} \\
+		\textcolor{maincolor1}{\textbf{17}} & \circulo{8} & \circulo{8} & \circulo{9} & \circulo{3} & \circulo{7} & \circulo{7} & \circulo{8} & \circulo{2} \\
+		\textcolor{maincolor1}{\textbf{14}} & \circulo{9} & \circulo{8} & \circulo{4} & \circulo{3} & \circulo{3} & \circulo{1} & \circulo{7} & \circulo{9} \\
+		\textcolor{maincolor1}{\textbf{23}} & \circulo{3} & \circulo{9} & \circulo{8} & \circulo{1} & \circulo{6} & \circulo{5} & \circulo{6} & \circulo{9} \\
+		\textcolor{maincolor1}{\textbf{13}} & \circulo{2} & \circulo{1} & \circulo{3} & \circulo{4} & \circulo{8} & \circulo{8} & \circulo{1} & \circulo{6} \\
+		\textcolor{maincolor1}{\textbf{17}} & \circulo{5} & \circulo{3} & \circulo{8} & \circulo{5} & \circulo{4} & \circulo{6} & \circulo{5} & \circulo{4} \\
+		\textcolor{maincolor1}{\textbf{25}} & \circulo{3} & \circulo{3} & \circulo{5} & \circulo{2} & \circulo{8} & \circulo{2} & \circulo{9} & \circulo{1} \\
+		\textcolor{maincolor1}{\textbf{6}}  & \circulo{1} & \circulo{1} & \circulo{6} & \circulo{5} & \circulo{5} & \circulo{4} & \circulo{4} & \circulo{1} \\
+		\hline
+	\end{tabular}
+\end{document}

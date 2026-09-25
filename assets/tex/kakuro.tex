@@ -1,0 +1,17 @@
+\documentclass[border=2mm]{standalone}
+\usepackage{xcolor}
+\usepackage{logicpuzzle}
+
+\definecolor{kakuro}{RGB}{21,182,184}
+\kakurosetup{color=kakuro}
+
+\begin{document}
+\begin{kakuro}
+  \framepuzzle
+  \kakurorow{5}{\Black,\KKR{23}{},\KKR{16}{},\KKR{10}{},\Black}
+  \kakurorow{4}{\KKR{}{14},{},{},{},\KKR{3}{}}
+  \kakurorow{3}{\KKR{}{16},{},{},{},{}}
+  \kakurorow{2}{\KKR{}{14},{},{},{},{}}
+  \kakurorow{1}{\Black,\KKR{}{8},{},{},\Black}
+\end{kakuro}
+\end{document}

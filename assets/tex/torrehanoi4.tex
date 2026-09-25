@@ -1,0 +1,26 @@
+\documentclass[border=2mm]{standalone}
+\usepackage{tikz}
+\definecolor{pegcolor}{RGB}{80,80,80}
+\definecolor{maincolor1}{RGB}{1,82,142}
+\definecolor{maincolor2}{RGB}{21,182,184}
+\definecolor{disk1}{RGB}{1,82,142}
+\definecolor{disk2}{RGB}{21,182,184}
+\definecolor{disk3}{RGB}{66,165,245}
+
+\begin{document}
+	\begin{tikzpicture}[x=1cm, y=0.5cm]
+		\draw[fill=pegcolor!30, draw=pegcolor, line width=1pt, rounded corners=2pt] (-0.5, 0) rectangle (9.5, 0.4);
+		\draw[fill=pegcolor, draw=pegcolor, rounded corners=2pt] (1.4, 0.4) rectangle (1.6, 4.5);
+		\draw[fill=pegcolor, draw=pegcolor, rounded corners=2pt] (4.4, 0.4) rectangle (4.6, 4.5);
+		\draw[fill=pegcolor, draw=pegcolor, rounded corners=2pt] (7.4, 0.4) rectangle (7.6, 4.5);
+		\node at (1.5, -0.6) {\small\textbf{\textsf{A}}};
+		\node at (4.5, -0.6) {\small\textbf{\textsf{B}}};
+		\node at (7.5, -0.6) {\small\textbf{\textsf{C}}};
+		
+		% B
+		\draw[fill=disk2, draw=black!70, rounded corners=3pt] (3.7, 0.4) rectangle (5.3, 1.1);
+		\draw[fill=disk1, draw=black!70, rounded corners=3pt] (4.0, 1.1) rectangle (5.0, 1.8);
+		% C
+		\draw[fill=disk3, draw=black!70, rounded corners=3pt] (6.4, 0.4) rectangle (8.6, 1.1);
+	\end{tikzpicture}
+\end{document}
