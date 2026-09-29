@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-a-crime-has-been-committed-in-a-sudoku",
+        },{id: "post-tower-of-hanoi-the-dance-of-minimum-movement",
+        
+          title: "Tower of Hanoi, the dance of minimum movement",
+        
+        description: "3 rods, a few disks to move a tower",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/towerhanoi/";
+          
+        },
+      },{id: "post-a-crime-has-been-committed-in-a-sudoku",
         
           title: "A crime has been committed... in a sudoku!",
         

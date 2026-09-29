@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-se-ha-cometido-un-crimen-en-un-sudoku",
+        },{id: "post-torres-de-hanoi-la-danza-del-mínimo-movimiento",
+        
+          title: "Torres de Hanoi, la danza del mínimo movimiento",
+        
+        description: "3 varillas, unos discos para mover una torre",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/towerhanoi/";
+          
+        },
+      },{id: "post-se-ha-cometido-un-crimen-en-un-sudoku",
         
           title: "Se ha cometido un crimen... ¡en un sudoku!",
         
