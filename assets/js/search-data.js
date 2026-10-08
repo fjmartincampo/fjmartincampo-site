@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-tower-of-hanoi-the-dance-of-minimum-movement",
+        },{id: "post-when-variables-mix-gomory-39-s-mixed-integer-cuts",
+        
+          title: "When Variables Mix: Gomory&#39;s Mixed-Integer Cuts",
+        
+        description: "Gomory&#39;s mixed-integer cuts allow solving optimization problems containing both integer and continuous variables.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/gomorycutmixed/";
+          
+        },
+      },{id: "post-tower-of-hanoi-the-dance-of-minimum-movement",
         
           title: "Tower of Hanoi, the dance of minimum movement",
         

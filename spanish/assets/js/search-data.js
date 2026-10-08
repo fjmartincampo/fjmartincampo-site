@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-torres-de-hanoi-la-danza-del-mínimo-movimiento",
+        },{id: "post-cuando-las-variables-se-mezclan-cortes-mixtos-de-gomory",
+        
+          title: "Cuando las variables se mezclan: cortes mixtos de Gomory",
+        
+        description: "Los cortes de Gomory mixtos permiten abordar problemas de optimización con variables enteras y continuas",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/gomorycutmixed/";
+          
+        },
+      },{id: "post-torres-de-hanoi-la-danza-del-mínimo-movimiento",
         
           title: "Torres de Hanoi, la danza del mínimo movimiento",
         
