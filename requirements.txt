@@ -1,1 +1,4 @@
 nbconvert
+PyYAML
+bibtexparser<2.0
+scholarly
