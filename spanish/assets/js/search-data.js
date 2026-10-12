@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-cuando-las-variables-se-mezclan-cortes-mixtos-de-gomory",
+        },{id: "post-kkt-y-dualidad-distintos-caminos-matemáticos-hacia-el-mismo-destino",
+        
+          title: "KKT y Dualidad: distintos caminos matemáticos hacia el mismo destino",
+        
+        description: "Las condiciones de Karush-Kuhn-Tucker y la teoría de la dualidad en optimización lineal convergen",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/kktlin/";
+          
+        },
+      },{id: "post-cuando-las-variables-se-mezclan-cortes-mixtos-de-gomory",
         
           title: "Cuando las variables se mezclan: cortes mixtos de Gomory",
         

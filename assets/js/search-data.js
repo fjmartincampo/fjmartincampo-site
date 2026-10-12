@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-when-variables-mix-gomory-39-s-mixed-integer-cuts",
+        },{id: "post-kkt-and-duality-different-mathematical-paths-to-the-same-destination",
+        
+          title: "KKT and duality: different mathematical paths to the same destination",
+        
+        description: "Karush-Kuhn-Tucker conditions and duality theory in linear optimization converge",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/kktlin/";
+          
+        },
+      },{id: "post-when-variables-mix-gomory-39-s-mixed-integer-cuts",
         
           title: "When Variables Mix: Gomory&#39;s Mixed-Integer Cuts",
         
