@@ -1,0 +1,71 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+\definecolor{maincolor1}{RGB}{1,82,142}
+\definecolor{maincolor2}{RGB}{21,182,184}
+\definecolor{mygrey}{rgb}{0.41, 0.41, 0.41}
+\begin{tikzpicture}
+\begin{axis}[
+title={$f(x) = x^2 - 3.2x + 3 \quad (n = 6)$},
+xlabel={$x$},
+ylabel={$f(x)$},
+xmin=-0.2, xmax=3.2,
+ymin=-0.1, ymax=3.3,
+axis lines=left,
+grid style={line width=.1pt, draw=gray!20},
+major grid style={line width=.2pt, draw=gray!50},
+minor tick num=1,
+legend pos=north west,
+legend style={font=\small, fill=white, fill opacity=0.9, draw opacity=1},
+width=12cm,
+height=8cm
+]
+
+% 1. Región sombreada del intervalo de incertidumbre [1.0, 2.0]
+\addplot[draw=none, fill=mygrey, opacity=0.1] coordinates {
+(1.0, -0.1) (1.0, 3.3) (2.0, 3.3) (2.0, -0.1)
+};
+
+% 2. Curva continua f(x)
+\addplot [
+domain=0:3, 
+samples=100, 
+color=maincolor1, 
+thick
+] {x^2 - 3.2*x + 3};
+
+% 3. Líneas verticales proyectadas a la malla
+\pgfplotsinvokeforeach{0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0}{
+\draw[gray!50, dashed] (axis cs:#1, -0.1) -- (axis cs:#1, {#1^2 - 3.2*#1 + 3});
+}
+
+% 4. Puntos evaluados en la malla de búsqueda
+\addplot [
+only marks, 
+mark=*, 
+mark size=3pt, 
+color=maincolor2
+] coordinates {
+(0.0, 3.0)
+(0.5, 1.65)
+(1.0, 0.80)
+(1.5, 0.45)
+(2.0, 0.60)
+(2.5, 1.25)
+(3.0, 2.40)
+};
+
+% 5. Mínimo analítico exacto (1.6, 0.44)
+\addplot [
+only marks, 
+mark=diamond*, 
+mark size=4pt, 
+color=maincolor2,
+thick
+] coordinates {(1.6, 0.44)};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

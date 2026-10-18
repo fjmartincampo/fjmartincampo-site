@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-kkt-and-duality-different-mathematical-paths-to-the-same-destination",
+        },{id: "post-uniform-search-in-optimization-measuring-the-terrain-point-by-point",
+        
+          title: "Uniform Search in Optimization: Measuring the Terrain Point by Point",
+        
+        description: "The most elementary grid method to bound the minimum of a function",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/nlunifsearch/";
+          
+        },
+      },{id: "post-kkt-and-duality-different-mathematical-paths-to-the-same-destination",
         
           title: "KKT and duality: different mathematical paths to the same destination",
         

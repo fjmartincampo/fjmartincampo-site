@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-kkt-y-dualidad-distintos-caminos-matemáticos-hacia-el-mismo-destino",
+        },{id: "post-búsqueda-uniforme-en-optimización-medir-el-terreno-punto-a-punto",
+        
+          title: "Búsqueda uniforme en optimización: medir el terreno punto a punto",
+        
+        description: "El método de malla más elemental que permite acotar el mínimo de una función",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/nlunifsearch/";
+          
+        },
+      },{id: "post-kkt-y-dualidad-distintos-caminos-matemáticos-hacia-el-mismo-destino",
         
           title: "KKT y Dualidad: distintos caminos matemáticos hacia el mismo destino",
         
