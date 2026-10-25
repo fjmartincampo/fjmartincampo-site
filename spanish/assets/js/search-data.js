@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-búsqueda-uniforme-en-optimización-medir-el-terreno-punto-a-punto",
+        },{id: "post-el-algoritmo-dicotómico-en-optimización-dividir-para-encontrar-el-mínimo",
+        
+          title: "El algoritmo dicotómico en optimización: Dividir para encontrar el mínimo",
+        
+        description: "Un algoritmo secuencial sin derivadas que reduce exponencialmente el intervalo de incertidumbre mediante bisección.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/nldichotomous/";
+          
+        },
+      },{id: "post-búsqueda-uniforme-en-optimización-medir-el-terreno-punto-a-punto",
         
           title: "Búsqueda uniforme en optimización: medir el terreno punto a punto",
         

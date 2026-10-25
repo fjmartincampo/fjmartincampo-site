@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-uniform-search-in-optimization-measuring-the-terrain-point-by-point",
+        },{id: "post-the-dichotomous-algorithm-in-optimization-dividing-to-find-the-minimum",
+        
+          title: "The dichotomous algorithm in optimization: Dividing to find the minimum",
+        
+        description: "A derivative-free sequential algorithm that exponentially reduces the interval of uncertainty through bisection.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/nldichotomous/";
+          
+        },
+      },{id: "post-uniform-search-in-optimization-measuring-the-terrain-point-by-point",
         
           title: "Uniform Search in Optimization: Measuring the Terrain Point by Point",
         
