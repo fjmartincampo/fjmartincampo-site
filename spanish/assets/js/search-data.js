@@ -329,7 +329,7 @@ ninja.data = [{
         },
       },{id: "post-optimización-no-lineal-con-restricciones-las-condiciones-que-esconden-el-óptimo",
         
-          title: "Optimización no lineal con restricciones, las condiciones que esconden el óptimo",
+          title: "Optimización no lineal con restricciones: las condiciones que esconden el óptimo",
         
         description: "Descubriendo cómo las condiciones de Karush-Kuhn-Tucker permiten conectar el objetivo y las restricciones para caracterizar soluciones óptimas",
         section: "Posts",
@@ -492,9 +492,9 @@ ninja.data = [{
             window.location.href = "/spanish/blog/2026/linearoptimization/";
           
         },
-      },{id: "post-la-ciencia-detrás-de-la-la-toma-de-decisiones-en-un-mundo-complejo-investigación-operativa",
+      },{id: "post-la-ciencia-detrás-de-la-toma-de-decisiones-en-un-mundo-complejo-investigación-operativa",
         
-          title: "La ciencia detrás de la la toma de decisiones en un mundo complejo...",
+          title: "La ciencia detrás de la toma de decisiones en un mundo complejo: investigación...",
         
         description: "Un recorrido por la historia, las sociedades científicas y el impacto de la investigación operativa",
         section: "Posts",

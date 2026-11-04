@@ -329,7 +329,7 @@ ninja.data = [{
         },
       },{id: "post-constrained-non-linear-optimization-the-conditions-hiding-the-optimum",
         
-          title: "Constrained Non-Linear Optimization, the conditions hiding the optimum",
+          title: "Constrained Non-Linear Optimization: the conditions hiding the optimum",
         
         description: "Discovering how the Karush-Kuhn-Tucker conditions connect the objective function and constraints to characterize optimal solutions",
         section: "Posts",
@@ -494,7 +494,7 @@ ninja.data = [{
         },
       },{id: "post-the-science-behind-decision-making-in-a-complex-world-operations-research",
         
-          title: "The science behind decision-making in a complex world - operations research",
+          title: "The science behind decision-making in a complex world: operations research",
         
         description: "A journey through the history, scientific societies and impact of operations research",
         section: "Posts",
