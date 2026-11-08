@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/sources/";
           },
-        },{id: "post-el-algoritmo-dicotómico-en-optimización-dividir-para-encontrar-el-mínimo",
+        },{id: "post-el-método-de-la-sección-áurea-en-optimización-la-proporción-divina-al-servicio-del-mínimo",
+        
+          title: "El método de la sección áurea en optimización: la proporción divina al servicio...",
+        
+        description: "Un algoritmo secuencial sin derivadas que reutiliza un punto en cada iteración gracias al número áureo.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/goldenratio/";
+          
+        },
+      },{id: "post-el-algoritmo-dicotómico-en-optimización-dividir-para-encontrar-el-mínimo",
         
           title: "El algoritmo dicotómico en optimización: Dividir para encontrar el mínimo",
         

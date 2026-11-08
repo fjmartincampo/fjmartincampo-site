@@ -118,7 +118,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/sources/";
           },
-        },{id: "post-the-dichotomous-algorithm-in-optimization-dividing-to-find-the-minimum",
+        },{id: "post-the-golden-section-method-in-optimization-the-divine-proportion-at-the-service-of-the-minimum",
+        
+          title: "The golden section method in optimization: the divine proportion at the service of...",
+        
+        description: "A derivative-free sequential algorithm that reuses one point at every iteration thanks to the golden ratio.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/goldenratio/";
+          
+        },
+      },{id: "post-the-dichotomous-algorithm-in-optimization-dividing-to-find-the-minimum",
         
           title: "The dichotomous algorithm in optimization: Dividing to find the minimum",
         

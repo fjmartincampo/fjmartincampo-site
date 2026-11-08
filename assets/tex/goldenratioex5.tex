@@ -1,0 +1,102 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{patterns} % Librería necesaria para el patrón de rayas
+
+\begin{document}
+	\definecolor{maincolor1}{RGB}{1,82,142}
+	\definecolor{maincolor2}{RGB}{21,182,184}
+	\definecolor{mygrey}{rgb}{0.41, 0.41, 0.41}
+	\definecolor{discardred}{RGB}{210, 60, 60}
+	\definecolor{reusecolor}{RGB}{230, 150, 30}
+
+	\begin{tikzpicture}
+		\begin{axis}[
+			title={$f(x) = x^2 - 3.2x + 3$ \quad (It. 5)},
+			xlabel={$x$},
+			ylabel={$f(x)$},
+			xmin=-0.2, xmax=3.2,
+			ymin=-0.1, ymax=3.3,
+			axis lines=left,
+			grid style={line width=.1pt, draw=gray!20},
+			major grid style={line width=.2pt, draw=gray!50},
+			minor tick num=1,
+			legend pos=north west,
+			legend style={font=\small, fill=white, fill opacity=0.9, draw opacity=1},
+			width=12cm,
+			height=8cm
+			]
+
+			% Región descartada [0, 1.4164] con rayas diagonales rojas
+			\addplot[
+			draw=none,
+			pattern=north east lines, 
+			pattern color=discardred
+			] coordinates {
+				(0, -0.1) (0, 3.3) (1.4164, 3.3) (1.4164, -0.1)
+			};
+
+			% Región descartada [1.6869, 3] con rayas diagonales rojas
+			\addplot[
+			draw=none,
+			pattern=north east lines, 
+			pattern color=discardred
+			] coordinates {
+				(1.6869, -0.1) (1.6869, 3.3) (3, 3.3) (3, -0.1)
+			};
+
+			% Nuevo intervalo de incertidumbre aceptado [1.4164, 1.6869] (Fondo gris)
+			\addplot[
+			draw=none,
+			fill=mygrey, 
+			opacity=0.1
+			] coordinates {
+				(1.4164, -0.1) (1.4164, 3.3) (1.6869, 3.3) (1.6869, -0.1)
+			};
+
+			% Curva continua f(x)
+			\addplot [
+			domain=0:3,
+			samples=100,
+			color=maincolor1,
+			thick
+			] {x^2 - 3.2*x + 3};
+
+			% Líneas proyectadas para los puntos de prueba x1 = 1.5836 y x2 = 1.6869
+			\draw[gray!50, dashed] (axis cs:1.5836, -0.1) -- (axis cs:1.5836, 0.4403);
+			\draw[gray!50, dashed] (axis cs:1.6869, -0.1) -- (axis cs:1.6869, 0.4476);
+
+			% Puntos de prueba evaluados en esta iteración
+			\addplot [
+			only marks, 
+			mark=*, 
+			mark size=3pt, 
+			color=maincolor2
+			] coordinates {
+				(1.6869, 0.4476)
+			};
+
+			% Punto reutilizado de la iteración anterior (no se vuelve a evaluar)
+			\addplot [
+			only marks,
+			mark=*,
+			mark size=3pt,
+			color=reusecolor
+			] coordinates {(1.5836, 0.4403)};
+
+			% Mínimo analítico exacto (1.6, 0.44)
+			\addplot [
+			only marks,
+			mark=diamond*,
+			mark size=4pt,
+			color=maincolor2,
+			thick
+			] coordinates {(1.6, 0.44)};
+
+			% Etiquetas en el eje X para x1 y x2
+			\node[below, font=\footnotesize, maincolor1] at (axis cs:1.5836, -0.1) {$x_1$};
+			\node[below, font=\footnotesize, maincolor1] at (axis cs:1.6869, -0.1) {$x_2$};
+
+		\end{axis}
+	\end{tikzpicture}
+\end{document}
