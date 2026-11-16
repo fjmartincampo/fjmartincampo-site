@@ -34,33 +34,12 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/coauthors/";
               },
-            },{id: "dropdown-publications-jcr",
-              title: "Publications JCR",
+            },{id: "dropdown-publications",
+              title: "Publications",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/publications/";
-              },
-            },{id: "dropdown-other-publications",
-              title: "Other publications",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/opublications/";
-              },
-            },{id: "dropdown-books-chapters",
-              title: "Books/chapters",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-datasets",
-              title: "Datasets",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/datasets/";
               },
             },{id: "dropdown-course-2026-27",
               title: "Course 2026-27",
@@ -111,14 +90,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-sources",
-          title: "Sources",
-          description: "",
-          section: "Navigation menu",
-          handler: () => {
-            window.location.href = "/sources/";
-          },
-        },{id: "post-the-golden-section-method-in-optimization-the-divine-proportion-at-the-service-of-the-minimum",
+        },{id: "post-the-fibonacci-method-in-optimization-the-optimal-search-hidden-in-a-sequence",
+        
+          title: "The Fibonacci method in optimization: the optimal search hidden in a sequence",
+        
+        description: "A derivative-free sequential algorithm whose optimal search strategy is built from the Fibonacci sequence.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fibonacci/";
+          
+        },
+      },{id: "post-the-golden-section-method-in-optimization-the-divine-proportion-at-the-service-of-the-minimum",
         
           title: "The golden section method in optimization: the divine proportion at the service of...",
         
@@ -514,9 +497,9 @@ ninja.data = [{
             window.location.href = "/blog/2026/historyOR/";
           
         },
-      },{id: "post-how-to-model-the-n-queens-problem-using-linear-programming",
+      },{id: "post-how-to-model-the-n-queens-problem-using-binary-linear-optimization",
         
-          title: "How to model the n-queens problem using linear programming",
+          title: "How to model the n-queens problem using binary linear optimization",
         
         description: "Modelling maximum non-attacking queens on a chessboard",
         section: "Posts",
@@ -538,47 +521,47 @@ ninja.data = [{
         },
       },{id: "projects-aircraft-conflict-detection-and-resolution",
           title: 'Aircraft conflict detection and resolution',
-          description: "",
+          description: "Optimization models and metaheuristics to detect and resolve conflicts between aircraft through speed, heading and altitude changes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-1/";
             },},{id: "projects-humanitarian-aid-distribution",
           title: 'Humanitarian aid distribution',
-          description: "",
+          description: "Multi-criteria decision making to distribute humanitarian aid after natural disasters, with real cases such as Haiti, Niger and Pakistan.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-2/";
             },},{id: "projects-design-of-electrification-programs-for-remote-areas",
           title: 'Design of electrification programs for remote areas',
-          description: "",
+          description: "Design of maintenance networks for solar home systems in rural areas without access to the power grid.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-3/";
             },},{id: "projects-facilities-closure-or-management-change",
           title: 'Facilities closure or management change',
-          description: "",
+          description: "Redesign of service networks in the retail sector minimizing customer losses.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-4/";
             },},{id: "projects-cutting-in-the-steel-industry",
           title: 'Cutting in the steel industry',
-          description: "",
+          description: "Cutting patterns for steel coils that minimize waste and balance the machine workload.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-5/";
             },},{id: "projects-cutting-in-the-cardboard-industry",
           title: 'Cutting in the cardboard industry',
-          description: "",
+          description: "Cutting of variable-sized sheets in the honeycomb cardboard industry.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-6/";
             },},{id: "projects-medical-staff-planning-in-field-hospital-operations",
           title: 'Medical staff planning in field hospital operations',
-          description: "",
+          description: "Medical staff planning for field hospital deployments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-7/";
             },},{id: "projects-photovoltaic-energy-distribution-in-residential-communities",
           title: 'Photovoltaic energy distribution in residential communities',
-          description: "",
+          description: "Fair sharing of photovoltaic energy among the residents of a community.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-8/";
             },},{id: "projects-geometric-classification-through-ensemble-learning",
           title: 'Geometric classification through ensemble learning',
-          description: "",
+          description: "Geometric classifiers based on ensembles of minimum spanning trees.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-9/";
             },},{

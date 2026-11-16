@@ -34,33 +34,12 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/spanish/coauthors/";
               },
-            },{id: "dropdown-publicaciones-jcr",
-              title: "Publicaciones JCR",
+            },{id: "dropdown-publicaciones",
+              title: "Publicaciones",
               description: "",
               section: "Otras opciones",
               handler: () => {
                 window.location.href = "/spanish/publications/";
-              },
-            },{id: "dropdown-otras-publicaciones",
-              title: "Otras publicaciones",
-              description: "",
-              section: "Otras opciones",
-              handler: () => {
-                window.location.href = "/spanish/opublications/";
-              },
-            },{id: "dropdown-libros-capítulos",
-              title: "Libros/capítulos",
-              description: "",
-              section: "Otras opciones",
-              handler: () => {
-                window.location.href = "/spanish/books/";
-              },
-            },{id: "dropdown-datasets",
-              title: "Datasets",
-              description: "",
-              section: "Otras opciones",
-              handler: () => {
-                window.location.href = "/spanish/datasets";
               },
             },{id: "dropdown-curso-2026-27",
               title: "Curso 2026-27",
@@ -111,14 +90,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/spanish/blog/";
           },
-        },{id: "nav-fuentes",
-          title: "Fuentes",
-          description: "",
-          section: "Menu de navegación",
-          handler: () => {
-            window.location.href = "/spanish/sources/";
-          },
-        },{id: "post-el-método-de-la-sección-áurea-en-optimización-la-proporción-divina-al-servicio-del-mínimo",
+        },{id: "post-el-método-de-fibonacci-en-optimización-la-búsqueda-óptima-escondida-en-una-sucesión",
+        
+          title: "El método de Fibonacci en optimización: la búsqueda óptima escondida en una sucesión...",
+        
+        description: "Un algoritmo secuencial sin derivadas cuya estrategia óptima de búsqueda se construye con la sucesión de Fibonacci.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/spanish/blog/2026/fibonacci/";
+          
+        },
+      },{id: "post-el-método-de-la-sección-áurea-en-optimización-la-proporción-divina-al-servicio-del-mínimo",
         
           title: "El método de la sección áurea en optimización: la proporción divina al servicio...",
         
@@ -514,9 +497,9 @@ ninja.data = [{
             window.location.href = "/spanish/blog/2026/historyOR/";
           
         },
-      },{id: "post-una-formulación-de-optimización-lineal-del-problema-de-las-n-reinas",
+      },{id: "post-una-formulación-de-optimización-lineal-binaria-del-problema-de-las-n-reinas",
         
-          title: "Una formulación de optimización lineal del problema de las n-reinas",
+          title: "Una formulación de optimización lineal binaria del problema de las n-reinas",
         
         description: "Modelización del número máximo de reinas sin atacarse en un tablero de ajedrez",
         section: "Posts",
@@ -538,47 +521,47 @@ ninja.data = [{
         },
       },{id: "projects-detección-y-resolución-de-conflictos-aéreos",
           title: 'Detección y resolución de conflictos aéreos',
-          description: "",
+          description: "Modelos de optimización y metaheurísticas para detectar y resolver conflictos entre aeronaves mediante cambios de velocidad, rumbo y altitud.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-1/";
             },},{id: "projects-distribución-de-ayuda-humanitaria",
           title: 'Distribución de ayuda humanitaria',
-          description: "",
+          description: "Decisión multicriterio para distribuir ayuda humanitaria tras desastres naturales, con casos reales como Haití, Níger y Pakistán.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-2/";
             },},{id: "projects-diseño-de-programas-de-electrificación-rural-descentralizada",
           title: 'Diseño de programas de electrificación rural descentralizada',
-          description: "",
+          description: "Diseño de redes de mantenimiento para sistemas solares domésticos en zonas rurales sin acceso a la red eléctrica.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-3/";
             },},{id: "projects-deslocalización-de-instalaciones",
           title: 'Deslocalización de instalaciones',
-          description: "",
+          description: "Rediseño de redes de servicio en el sector retail minimizando la pérdida de clientes.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-4/";
             },},{id: "projects-corte-en-la-industria-del-acero",
           title: 'Corte en la industria del acero',
-          description: "",
+          description: "Patrones de corte de bobinas de acero que minimizan el desperdicio y equilibran la carga de las máquinas.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-5/";
             },},{id: "projects-corte-en-la-industria-del-cartón-nido-de-abeja",
           title: 'Corte en la industria del cartón nido de abeja',
-          description: "",
+          description: "Corte de planchas de tamaño variable en la industria del cartón nido de abeja.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-6/";
             },},{id: "projects-planificación-del-personal-médico-en-un-hospital-de-campaña",
           title: 'Planificación del personal médico en un hospital de campaña',
-          description: "",
+          description: "Planificación del personal sanitario en el despliegue de hospitales de campaña.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-7/";
             },},{id: "projects-reparto-de-energía-fotovoltaica-en-comunidades-de-vecinos",
           title: 'Reparto de energía fotovoltaica en comunidades de vecinos',
-          description: "",
+          description: "Reparto equitativo de la energía fotovoltaica compartida entre los vecinos de una comunidad.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-8/";
             },},{id: "projects-clasificación-geométrica-mediante-ensamblados",
           title: 'Clasificación geométrica mediante ensamblados',
-          description: "",
+          description: "Clasificadores geométricos basados en ensamblados de árboles generadores mínimos.",
           section: "Proyectos",handler: () => {
               window.location.href = "/spanish/projects/project-9/";
             },},{
